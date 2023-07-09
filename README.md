@@ -23,3 +23,23 @@ Sesuaikan program jika diperlukan atau tambahkan fitur tambahan sesuai kebutuhan
 Repository ini berguna bagi para pemilik supermarket atau pengembang yang tertarik untuk mengimplementasikan sistem kasir self-service di toko mereka. Dengan menggunakan repository ini, mereka dapat dengan mudah mengintegrasikan fitur-fitur yang diperlukan dan menyesuaikan program sesuai dengan kebutuhan spesifik mereka.
 
 Catatan: Repository ini hanya berisi implementasi program Python untuk sistem kasir self-service. Tidak termasuk antarmuka pengguna (UI) yang lengkap atau fitur-fitur lainnya yang mungkin diperlukan dalam implementasi nyata.
+
+
+## Alur Program
+Program dimulai dengan membuat objek transaksi baru menggunakan class Transaction.
+
+Pengguna memasukkan item yang ingin dibeli ke dalam transaksi dengan menggunakan metode add_item pada objek transaksi. Item tersebut berisi nama item, jumlah item, dan harga per item. 
+Pengguna memiliki opsi untuk melakukan pembaruan pada transaksi, yaitu:
+
+- Mengubah nama item dengan menggunakan metode update_item_name.
+- Mengubah jumlah item dengan menggunakan metode update_item_qty.
+- Mengubah harga item dengan menggunakan metode update_item_price.
+
+Jika pengguna ingin menghapus salah satu item dari transaksi, pengguna dapat menggunakan metode delete_item.
+Jika pengguna ingin menghapus semua item atau mereset transaksi, pengguna dapat menggunakan metode reset_transaction.
+
+Pengguna dapat melakukan pengecekan pesanan dengan menggunakan metode check_order. Metode ini akan memeriksa apakah ada kesalahan input data dalam transaksi. Jika tidak ada kesalahan, program akan mengeluarkan pesan "Pemesanan sudah benar" dan menampilkan daftar transaksi. Jika terdapat kesalahan, program akan mengeluarkan pesan "Terjadi kesalahan input data".
+
+Program akan menghitung total harga transaksi dengan menggunakan metode total_price. Jika total belanja memenuhi syarat diskon, program akan mengurangi total harga sesuai dengan diskon yang berlaku.
+
+Program akan mencetak daftar transaksi beserta total harga setelah diskon.
