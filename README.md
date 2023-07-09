@@ -5,14 +5,14 @@ Repository ini berisi implementasi program Python untuk sistem kasir self-servic
 
 ## Fitur-fitur:
 
-- Membuat transaksi baru dengan mengatur ID transaksi.
-- Menambahkan item pembelian dengan memasukkan nama item, jumlah item, dan harga per item.
-- Mengubah nama item, jumlah item, atau harga item dalam transaksi.
-- Menghapus item dari transaksi.
-- Menghapus semua item dan mereset transaksi.
-- Memeriksa pesanan untuk mendeteksi kesalahan input data.
-- Menghitung total harga transaksi dengan mempertimbangkan diskon berdasarkan aturan yang ditentukan.
-- Menampilkan daftar transaksi beserta total harga setelah diskon.
+  - Membuat transaksi baru dengan mengatur ID transaksi.
+  - Menambahkan item pembelian dengan memasukkan nama item, jumlah item, dan harga per item.
+  - Mengubah nama item, jumlah item, atau harga item dalam transaksi.
+  - Menghapus item dari transaksi.
+  - Menghapus semua item dan mereset transaksi.
+  - Memeriksa pesanan untuk mendeteksi kesalahan input data.
+  - Menghitung total harga transaksi dengan mempertimbangkan diskon berdasarkan aturan yang ditentukan.
+  - Menampilkan daftar transaksi beserta total harga setelah diskon.
 
 ## Intruksi Penggunaan: 
 1. Clone repository ini ke lokal Anda.
@@ -31,9 +31,9 @@ Catatan: Repository ini hanya berisi implementasi program Python untuk sistem ka
 2. Pengguna memasukkan item yang ingin dibeli ke dalam transaksi dengan menggunakan metode add_item pada objek transaksi. Item tersebut berisi nama item, jumlah item, dan harga per item. 
 3. Pengguna memiliki opsi untuk melakukan pembaruan pada transaksi, yaitu:
 
-- Mengubah nama item dengan menggunakan metode update_item_name.
-- Mengubah jumlah item dengan menggunakan metode update_item_qty.
-- Mengubah harga item dengan menggunakan metode update_item_price.
+  - Mengubah nama item dengan menggunakan metode update_item_name.
+  - Mengubah jumlah item dengan menggunakan metode update_item_qty.
+  - Mengubah harga item dengan menggunakan metode update_item_price.
 
 4. Jika pengguna ingin menghapus salah satu item dari transaksi, pengguna dapat menggunakan metode delete_item.
 5. Jika pengguna ingin menghapus semua item atau mereset transaksi, pengguna dapat menggunakan metode reset_transaction.
